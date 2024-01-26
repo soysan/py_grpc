@@ -1,0 +1,15 @@
+{
+  "name": "grpc python",
+  "image": "grpc",
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-python.python"],
+      "settings": {
+        "python.pythonPath": "/usr/local/bin/python"
+      }
+    }
+  },
+  "forwardPorts": [5050],
+  "postCreateCommand": "pip install -r requirements.txt"
+}
+
